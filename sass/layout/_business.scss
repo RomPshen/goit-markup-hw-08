@@ -1,0 +1,42 @@
+.business {
+  display: flex;
+}
+
+.business__section {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.examples {
+  padding-bottom: 94px;
+}
+
+.examples-container__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.business__overlay {
+  position: absolute;
+  display: flex;
+
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+}
