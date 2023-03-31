@@ -15,6 +15,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
   }
   }
 
@@ -34,13 +35,19 @@
   
   }
 
+  .features__section {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+           }
+  }
+
   .features__section:not(:last-child) {
     @media screen and (max-width: 767px) {
     margin-bottom: 30px;
        }
       }
 
-      .features__section:nth-child(odd) {
+  .features__section:nth-child(odd) {
         @media screen and (min-width: 768px) {
         margin-right: 30px;
            }
@@ -56,11 +63,12 @@
   
     margin-bottom: 30px;
 
-    @media screen and (max-width: 768px) {
-      width: 354px;
-
+    @media screen and (max-width: 767px) {
+      width: 100%;
          }
-
+    @media screen and (min-width: 768px) {
+          width: 354px;
+             }
   }
 
 /* .feature {
