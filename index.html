@@ -128,7 +128,7 @@
 
     <main>
       <!-- Герой -->
-       
+
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-container__title">
@@ -139,14 +139,13 @@
           </button>
         </div>
       </section>
-    
 
       <!-- Особливості -->
-      
+
       <section class="feature">
         <div class="container feature-container">
           <h2 class="visually-hidden">Особливості</h2>
-          
+
           <ul class="features">
             <li class="features__section">
               <div class="features__picture">
@@ -200,7 +199,7 @@
       </section>
 
       <!-- Зайнятість -->
-      
+
       <section class="examples">
         <div class="container examples-container">
           <h2 class="examples-container__title">Чим ми займаємося</h2>
@@ -210,33 +209,72 @@
               <div class="business__overlay">
                 <p class="business__description">Десктопні додатки</p>
               </div>
-              <img src="./images/box1.jpg" alt="Кодинг" width="370" />
+              <img
+                srcset="./images/box1.jpg 1x, ./images/box1_desctop@2.jpg 2x"
+                src="./images/box1.jpg"
+                alt="Кодинг"
+                width="370"
+              />
             </li>
             <li class="business__section">
               <div class="business__overlay">
                 <p class="business__description">Мобільні додатки</p>
               </div>
-              <img src="./images/box2.jpg" alt="Дизайн" width="370" />
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2_desctop@2.jpg 2x"
+                src="./images/box2.jpg"
+                alt="Дизайн"
+                width="370"
+              />
             </li>
             <li class="business__section">
               <div class="business__overlay">
                 <p class="business__description">Дизайнерські рішення</p>
               </div>
-              <img src="./images/box3.jpg" alt="Палітра" width="370" />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3_desctop@2.jpg 2x"
+                src="./images/box3.jpg"
+                alt="Палітра"
+                width="370"
+              />
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Команда -->
-      
+
       <section class="team">
         <div class="container team-container">
           <h2 class="team-container__title">Наша команда</h2>
 
           <ul class="cards">
             <li class="cards__section">
-              <img src="./images/tcard1.jpg" alt="Фото"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_1_desktot@1x.jpg 1x,
+                    ./images/team_card_1_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_1_tablet@1x.jpg 1x,
+                    ./images/team_card_1_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_1_mobile@1x.jpg 1x,
+                    ./images/team_card_1_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team_card_1_mobile@1x.jpg" alt="Фото" />
+              </picture>
+
               <div class="cards__person-card">
                 <h3 class="cards__person-name">Ігор Дем'яненко</h3>
                 <p class="cards__person-position">Product Designer</p>
@@ -278,7 +316,31 @@
             </li>
 
             <li class="cards__section">
-              <img src="./images/tcard2.jpg" alt="Фото"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_2_desktop@1x.jpg 1x,
+                    ./images/team_card_2_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_2_tablet@1x.jpg 1x,
+                    ./images/team_card_2_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_2_mobile@1x.jpg 1x,
+                    ./images/team_card_2_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team_card_2_mobile@1x.jpg" alt="Фото" />
+              </picture>
+
               <div class="cards__person-card">
                 <h3 class="cards__person-name">Ольга Рєпіна</h3>
                 <p class="cards__person-position">Frontend Developer</p>
@@ -319,7 +381,31 @@
               </div>
             </li>
             <li class="cards__section">
-              <img src="./images/tcard3.jpg" alt="Фото"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_3_desktop@1x.jpg 1x,
+                    ./images/team_card_3_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_3_tablet@1x.jpg 1x,
+                    ./images/team_card_3_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_3_mobile@1x.jpg 1x,
+                    ./images/team_card_3_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team_card_3_mobile@1x.jpg" alt="Фото" />
+              </picture>
+
               <div class="cards__person-card">
                 <h3 class="cards__person-name">Микола Тарасов</h3>
                 <p class="cards__person-position">Marketing</p>
@@ -360,7 +446,31 @@
               </div>
             </li>
             <li class="cards__section">
-              <img src="./images/tcard4.jpg" alt="Фото"/>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_4_desktop@1x.jpg 1x,
+                    ./images/team_card_4_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_4_tablet@1x.jpg 1x,
+                    ./images/team_card_4_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_4_mobile@1x.jpg 1x,
+                    ./images/team_card_4_mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team_card_4_mobile@1x.jpg" alt="Фото" />
+              </picture>
+
               <div class="cards__person-card">
                 <h3 class="cards__person-name">Михайло Єрмаков</h3>
                 <p class="cards__person-position">UI Designer</p>
@@ -403,10 +513,9 @@
           </ul>
         </div>
       </section>
- 
 
       <!-- Клієнти -->
-     
+
       <section class="clients">
         <div class="container clients-container">
           <h2 class="clients-container__title">Постійні клієнти</h2>
@@ -465,10 +574,11 @@
     </main>
 
     <!-- Футер -->
-    <!-- 
+    
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-container__address">
+          <div class="footer-container__address-logo">
           <a href="./index.html" class="logo footer-logo"
             ><span class="logo__text-accent">Web</span>Studio</a
           >
@@ -482,6 +592,7 @@
             >
           </address>
         </div>
+      </div>
 
         <div class="footer-link">
           <p class="footer-link__title">Приєднуйтесь</p>
@@ -546,7 +657,7 @@
         </form>
       </div>
     </footer>
-  -->
+ 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal is-modal">
         <button type="button" class="modal__close-btn" data-modal-close>
