@@ -1,6 +1,6 @@
 .filter {
   @media screen and (max-width: 767px) {
-    width: 100%;
+    width: 326px;
     flex-wrap: wrap;
     margin-bottom: 40px;
     justify-content: start;
@@ -13,12 +13,6 @@
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.filter__item:nth-child(3) {
-  @media screen and (max-width: 767px) {
-    margin-right: 138px;
-  }
 }
 
 .filter__item:nth-child(-n + 3) {
