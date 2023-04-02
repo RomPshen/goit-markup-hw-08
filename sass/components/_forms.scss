@@ -157,7 +157,7 @@
 
 .footer-form-wrapper {
   @media screen and (max-width: 1199px) {
-display: block;
+    display: block;
   }
 
   display: flex;
@@ -167,10 +167,10 @@ display: block;
 .footer-form-wrapper__input {
   @media screen and (max-width: 1199px) {
     width: 450px;
-  height: 50px;
+    height: 50px;
     margin-bottom: 20px;
-      }
-  
+  }
+
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -187,8 +187,8 @@ display: block;
   @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
-      }
-  
+  }
+
   display: flex;
   width: 200px;
   height: 50px;
