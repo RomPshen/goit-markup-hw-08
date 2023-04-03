@@ -88,6 +88,10 @@
   color: var(--description-text-color);
   cursor: pointer;
 
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+
   &::before {
     content: "";
     display: inline-block;
