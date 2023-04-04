@@ -1,11 +1,12 @@
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   overflow: auto;
   background-color: var(--hero-text-color);
+
 
   opacity: 0;
   visibility: hidden;
@@ -67,7 +68,13 @@
 
 .mobile-menu-btn__icon {
   fill: var(--primary-text-color);
+
+  .mobile-menu-btn:hover & {
+    fill: var(--accent-color);
+  }
 }
+
+
 
 .mobile-menu__link {
   font-size: 40px;

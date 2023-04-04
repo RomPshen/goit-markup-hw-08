@@ -1,5 +1,5 @@
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -14,9 +14,8 @@
   @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;
-  }
-
-  height: 581px;
+    height: 581px;
+}
 }
 
 .modal__close-btn {

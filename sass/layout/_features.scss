@@ -3,10 +3,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-    
+
   padding-top: 94px;
-    padding-bottom: 94px;
-  
+  padding-bottom: 94px;
 }
 
 .features {
@@ -51,6 +50,12 @@
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+  }
+}
+
+.features__section:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 

@@ -14,13 +14,12 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-
+   
     flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
+     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
 
   margin-top: var(--card-set-gap);
@@ -43,6 +42,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+
 }
 
 .card-content__description {
@@ -52,6 +52,7 @@
   line-height: 1.88;
 
   margin-top: 4px;
+  
 }
 
 .card-content {

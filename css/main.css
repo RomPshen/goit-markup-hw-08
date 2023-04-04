@@ -101,7 +101,7 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -172,6 +172,9 @@ body {
 
 .mobile-menu-btn__icon {
   fill: var(--primary-text-color);
+}
+.mobile-menu-btn:hover .mobile-menu-btn__icon {
+  fill: var(--accent-color);
 }
 
 .mobile-menu__link {
@@ -347,7 +350,7 @@ body {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer-link {
     position: absolute;
-    top: 65px;
+    top: 5px;
     right: 89px;
   }
 }
@@ -369,7 +372,7 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -383,12 +386,12 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: 581px;
 }
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
+    height: 581px;
   }
 }
 
@@ -788,6 +791,9 @@ body {
     font-size: 12px;
     line-height: 1.17;
   }
+  .contact__link:hover, .contact__link:focus {
+    color: var(--accent-color);
+  }
   .contact__icon {
     margin-right: 8px;
   }
@@ -804,7 +810,7 @@ body {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--primary-text-color);
+    color: var(--description-text-color);
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 14px;
@@ -827,15 +833,12 @@ body {
   text-align: center;
   background-color: #c4c4c4;
   margin: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (max-width: 1199px) {
   .hero {
-    max-width: 767px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -843,24 +846,26 @@ body {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
-    background-image: url("../images/header_mobile@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_mobile@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mobile@1x.jpg");
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/header_mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
-    background-image: url("../images/header_tablet@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_tablet@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tablet@1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/header_tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1199px) {
@@ -869,12 +874,14 @@ body {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/header_desktop@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_desktop@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_desktop@1x.jpg");
   }
 }
 @media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/header_desktop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_desktop@2x.jpg");
   }
 }
 
@@ -961,6 +968,12 @@ body {
 @media screen and (min-width: 1200px) {
   .features__section {
     width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__section:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1274,7 +1287,6 @@ body {
   background-color: var(--background-hero-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  position: relative;
 }
 
 .home {
@@ -1318,6 +1330,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  position: relative;
 }
 @media screen and (max-width: 1199px) {
   .footer-container {
@@ -1447,7 +1460,6 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set__item {
-    width: 354px;
     -ms-flex-preferred-size: calc(50% - var(--card-set-gap));
         flex-basis: calc(50% - var(--card-set-gap));
   }
