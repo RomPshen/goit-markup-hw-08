@@ -171,21 +171,13 @@
 .footer-form-wrapper__input {
   @media screen and (max-width: 479px) {
     width: 100%;
-    margin-bottom: 20px;
-  }
+      }
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
-
+  
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;

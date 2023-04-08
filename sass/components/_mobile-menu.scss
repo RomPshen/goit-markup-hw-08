@@ -7,7 +7,6 @@
   overflow: auto;
   background-color: var(--hero-text-color);
 
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -74,8 +73,6 @@
   }
 }
 
-
-
 .mobile-menu__link {
   font-size: 40px;
   font-weight: 500;
@@ -88,6 +85,10 @@
 }
 
 .mobile-menu__contact-phone {
+  @media screen and (max-width: 479px) {
+    font-size: 30px;
+  }
+
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
