@@ -80,6 +80,11 @@
   color: var(--primary-text-color);
 }
 
+.mobile-menu__item:hover .mobile-menu__link,
+.mobile-menu__item:focus .mobile-menu__link {
+  color: var(--accent-color);
+}
+
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -117,9 +122,12 @@
   margin-top: 64px;
 }
 .mobile-menu__social-link {
+  @media screen and (max-width: 479px) {
+    font-size: 12px;;
+  }
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
   color: var(--accent-color);
 }
 
